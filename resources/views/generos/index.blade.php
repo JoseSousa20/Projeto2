@@ -5,9 +5,8 @@
 @endsection
 @section('conteudo')
 <ul>
-@foreach($livros as $livro)
-<li>{{$livro->titulo}}</li>
+@foreach($generos as $genero)
+<li>{{$genero->designacao}}</li>
 @endforeach
-{{$livros->render()}}
 </ul>
 @endsection
