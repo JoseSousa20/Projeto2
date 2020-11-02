@@ -6,7 +6,10 @@
 @section('conteudo')
 <ul>
 @foreach($editoras as $editora)
-<li>{{$editora->nome}}</li>
+<li>
+<a href="{{route('editoras.show',['id'=>$editora->ide])}}">
+{{$editora->nome}}
+</li>
 @endforeach
 </ul>
 @endsection

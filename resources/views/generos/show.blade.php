@@ -1,0 +1,9 @@
+@extends('layout')
+@section('titulo')
+@endsection
+@section('header')
+@endsection
+@section('conteudo')
+IDG:{{$generos->idg}}<br>
+Designação:{{$generos->designacao}}<br>
+@endsection

@@ -6,7 +6,11 @@
 @section('conteudo')
 <ul>
 @foreach($generos as $genero)
-<li>{{$genero->designacao}}</li>
+<li>
+<a href="{{route('generos.show',['id'=>$genero->idg])}}">
+{{$genero->designacao}}
+</a>
+</li>
 @endforeach
 </ul>
 @endsection

@@ -9,16 +9,24 @@
     <body>
        <h1 style="color: #00ff88">@yield('header')</h1>
        @yield('conteudo')
-       <div class="menu-rodape">
-            
+       <br>
+       <div class="container">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2">
             <a href="{{route('livros.index')}}"><i class="far fa-arrow-alt-circle-right"></i>livros</a>
-            <br>
+            </div>
+            <div class="col-md-2">
             <a href="{{route('autores.index')}}"><i class="far fa-arrow-alt-circle-right"></i>Autores</a>
-            <br>
+            </div>
+            <div class="col-md-2">
             <a href="{{route('editoras.index')}}"><i class="far fa-arrow-alt-circle-right"></i>Editoras</a>
-            <br>
+            </div>
+            <div class="col-md-2">
             <a href="{{route('generos.index')}}"><i class="far fa-arrow-alt-circle-right"></i>Generos</a>
-            <br>
+            </div>
+            </div>
+         </div>
         </div>
         <script src="{{asset('js/jquery.min.js')}}"></script>
         <script src="{{asset('js/bootstrap.min.js')}}"></script>

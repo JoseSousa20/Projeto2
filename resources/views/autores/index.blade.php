@@ -6,7 +6,10 @@
 @section('conteudo')
 <ul>
 @foreach($autores as $autor)
-<li>{{$autor->nome}}</li>
+<li><a href="{{route('autores.show',['id'=>$autor->ida])}}">
+{{$autor->nome}}
+</a>
+</li>
 @endforeach
 </ul>
 @endsection

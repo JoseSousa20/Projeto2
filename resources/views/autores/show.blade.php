@@ -1,0 +1,10 @@
+@extends('layout')
+@section('titulo')
+@endsection
+@section('header')
+@endsection
+@section('conteudo')
+ID:{{$autores->ida}}<br>
+Nome:{{$autores->nome}}<br>
+Nacionalidade:{{$autores->nacionalidade}}
+@endsection

@@ -1,0 +1,9 @@
+@extends('layout')
+@section('titulo')
+@endsection
+@section('header')
+@endsection
+@section('conteudo')
+IDE:{{$editoras->ide}}<br>
+Nome:{{$editoras->nome}}<br>
+@endsection

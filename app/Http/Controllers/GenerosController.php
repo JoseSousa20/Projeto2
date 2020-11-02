@@ -14,4 +14,14 @@ class GenerosController extends Controller
             'generos'=>$generos
         ]);
     }
+
+    public function show(Request $request){
+        $idGenero = $request->id;
+
+        $generos = Genero::where('idg',$idGenero)->first();
+
+        return view('generos.show',[
+            'generos'=>$generos
+        ]);
+    }
 }
