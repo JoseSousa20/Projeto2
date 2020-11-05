@@ -4,7 +4,7 @@
 @section('header')
 @endsection
 @section('conteudo')
-ID:{{$livro->idl}}<br>
+ID:{{$livro->id_livro}}<br>
 Título:{{$livro->titulo}}<br>
 Idioma:{{$livro->idioma}}
 @endsection

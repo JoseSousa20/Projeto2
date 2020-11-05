@@ -4,6 +4,6 @@
 @section('header')
 @endsection
 @section('conteudo')
-IDE:{{$editoras->ide}}<br>
+IDE:{{$editoras->id_editora}}<br>
 Nome:{{$editoras->nome}}<br>
 @endsection

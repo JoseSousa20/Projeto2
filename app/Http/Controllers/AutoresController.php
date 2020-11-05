@@ -18,7 +18,7 @@ class AutoresController extends Controller
     public function show(Request $request){
         $idAutor = $request->id;
 
-        $autores = Autor::where('ida',$idAutor)->first();
+        $autores = Autor::where('id_autor',$idAutor)->first();
 
         return view('autores.show',[
             'autores'=>$autores

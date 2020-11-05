@@ -23,7 +23,7 @@ class LivrosController extends Controller
 
         //$livro = Livro::find($idLivro);
 
-        $livro = Livro::where('idl',$idLivro)->first();
+        $livro = Livro::where('id_livro',$idLivro)->first();
 
         return view('livros.show',[
             'livro'=>$livro

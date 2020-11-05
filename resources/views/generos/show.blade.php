@@ -4,6 +4,6 @@
 @section('header')
 @endsection
 @section('conteudo')
-IDG:{{$generos->idg}}<br>
+IDG:{{$generos->id_genero}}<br>
 Designação:{{$generos->designacao}}<br>
 @endsection
