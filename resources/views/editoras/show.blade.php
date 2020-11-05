@@ -4,6 +4,8 @@
 @section('header')
 @endsection
 @section('conteudo')
-IDE:{{$editoras->id_editora}}<br>
+ID:{{$editoras->id_editora}}<br>
 Nome:{{$editoras->nome}}<br>
+Morada:{{$editoras->morada}}<br>
+Observações:{{$editoras->observacoes}}
 @endsection

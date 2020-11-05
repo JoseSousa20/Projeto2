@@ -20,8 +20,8 @@ class EditorasController extends Controller
 
         $editoras = Editora::where('id_editora',$idEditora)->first();
 
-        return view('editora.show',[
-            'editora'=>$editoras
+        return view('editoras.show',[
+            'editoras'=>$editoras
         ]);
     }
 }
