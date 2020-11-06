@@ -28,4 +28,10 @@ Nome: {{$livro->autor->nome}}<br>
 <h6>Nome do Autor não defenido</h6>
 </div>
 @endif
+@foreach($livro->autores as $autor)
+{{$autor->nome}}<br>
+@endforeach
+@foreach($livro->editoras as $editora)
+Editora: {{$editora->nome}}<br>
+@endforeach
 @endsection

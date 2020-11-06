@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 05-Nov-2020 às 11:01
+-- Generation Time: 06-Nov-2020 às 16:03
 -- Versão do servidor: 10.1.38-MariaDB
 -- versão do PHP: 7.3.2
 
@@ -57,6 +57,20 @@ INSERT INTO `autores` (`id_autor`, `nome`, `nacionalidade`, `data_nascimento`, `
 (11, 'Paula Moura', 'Português', NULL, NULL, NULL, NULL, NULL),
 (12, 'Luis Cunha', 'Português', NULL, NULL, NULL, NULL, NULL),
 (13, 'Pereira Alfredo', 'Angolano', NULL, NULL, NULL, NULL, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `autores_livros`
+--
+
+CREATE TABLE `autores_livros` (
+  `id_al` int(11) NOT NULL,
+  `id_Autor` int(11) NOT NULL,
+  `id_livro` int(11) NOT NULL,
+  `updated_At` timestamp NULL DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -185,6 +199,12 @@ ALTER TABLE `autores`
   ADD PRIMARY KEY (`id_autor`);
 
 --
+-- Indexes for table `autores_livros`
+--
+ALTER TABLE `autores_livros`
+  ADD PRIMARY KEY (`id_al`);
+
+--
 -- Indexes for table `edicoes`
 --
 ALTER TABLE `edicoes`
@@ -217,6 +237,12 @@ ALTER TABLE `livros`
 --
 ALTER TABLE `autores`
   MODIFY `id_autor` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+
+--
+-- AUTO_INCREMENT for table `autores_livros`
+--
+ALTER TABLE `autores_livros`
+  MODIFY `id_al` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `editoras`

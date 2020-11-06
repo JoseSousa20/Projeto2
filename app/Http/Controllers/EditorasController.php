@@ -18,7 +18,7 @@ class EditorasController extends Controller
     public function show(Request $request){
         $idEditora = $request->id;
 
-        $editoras = Editora::where('id_editora',$idEditora)->first();
+        $editoras = Editora::where('id_editora',$idEditora)->with('livros')->first();
 
         return view('editoras.show',[
             'editoras'=>$editoras
