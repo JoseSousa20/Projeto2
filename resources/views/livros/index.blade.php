@@ -17,8 +17,10 @@
 
 
 <h5>Pesquisar Livros</h5>
-<form method="POST" action="enviado">
-    Pesquisar: <input type="text" name="pesquisar">
-    <input type="submit" value="Enviar">
+<form method="POST" action="{{route('enviado')}}">
+@csrf
+<label for="pesquisar">Pesquisa:</label>
+ <input type="text" name="pesquisar">
+    <button type="submit">Enviar</button>
 </form>
 @endsection

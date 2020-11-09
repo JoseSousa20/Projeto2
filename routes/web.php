@@ -29,5 +29,5 @@ Route::get('/generos/{id}/show', 'App\Http\Controllers\GenerosController@show')-
 
 Route::get('/editoras/{id}/show', 'App\Http\Controllers\EditorasController@show')->name('editoras.show');
 
-Route::post('/enviado', 'App\Http\Controllers\LivrosController@enviado')->name('enviado');
+Route::post('/enviado', 'App\Http\Controllers\LivrosController@pesquisar')->name('enviado');
 
